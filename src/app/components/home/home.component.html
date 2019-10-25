@@ -1,0 +1,102 @@
+
+<div id="basla">
+  <app-header></app-header>
+       
+  <app-menu></app-menu>
+  
+   <div class=" d-none d-md-block">
+   <div class="news">
+      <div class="gallery">
+        <section class="gallery_items">
+          <figure class="gallery_item">
+            <img src="assets/img/1.jpg"  />
+            <figcaption>
+              <b>YENİKÖY MOTORS İSTANBUL SHOWROOM</b>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery_item">
+            <img src="assets/img/2.jpg"/>	
+            <figcaption>
+              <b>YENİKÖY MOTORS İZMİR SHOWROOM</b>
+            </figcaption>
+          </figure>
+    
+          <figure class="gallery_item">
+            <img src="assets/img/3.jpg"/>
+            <figcaption>
+              <b>TÜRKİYE GENEL DİSTRİBÜTÖRÜ D&D MOTORLU ARAÇLAR A.Ş.</b>
+            </figcaption>	
+          </figure>
+          
+          <figure class="gallery_item">
+            <img src="assets/img/4.jpg"/>
+            <figcaption>
+              <b>YENİKÖY MOTORS İSTANBUL SHOWROOM</b>
+            </figcaption>	
+          </figure>
+          
+          <figure class="gallery_item">
+            <img src="assets/img/5.jpg"/>
+            <figcaption>
+              <b>YENİKÖY MOTORS İSTANBUL SHOWROOM</b>
+            </figcaption>	
+          </figure>
+          
+          <figure class="gallery_item">
+            <img src="assets/img/6.jpg"/>
+            <figcaption>
+              <b>YENİKÖY MOTORS İSTANBUL SHOWROOM</b>
+            </figcaption>	
+          </figure>
+          
+          <figure class="gallery_item">
+            <img src="assets/img/7.jpg"/>
+            <figcaption>
+              <b>YENİKÖY MOTORS İSTANBUL SHOWROOM</b>
+            </figcaption>	
+          </figure>
+          
+          <figure class="gallery_item">
+            <img src="assets/img/8.jpg"/>
+            <figcaption>
+              <b>YENİKÖY MOTORS SERVİS</b>
+            </figcaption>	
+          </figure>
+    
+          
+        </section>
+      </div>
+    </div>
+  </div>
+    
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <div class="onecikan">
+            <div class="araclar">
+            <div class="oneyazi">ÖNE ÇIKAN ARAÇLAR</div>
+            <div class="arabatablo col-md-12" >
+            
+                <div (click)="onSelect(item)" *ngFor="let item of arabalar">
+                             
+                    <div class="agenel {{ item.id}} col-md-12">
+                        <div class="aresim "><img src="{{ item.img }}" class="akucuk"></div><div class="aresimyazi">{{item.title}}<br><br>{{item.info}}</div>
+                        
+                    </div>
+               
+              </div>
+            
+            </div>
+           
+            </div>
+            </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+<app-footer></app-footer>
+

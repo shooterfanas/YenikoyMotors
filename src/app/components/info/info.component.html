@@ -1,0 +1,160 @@
+<div id="basla">
+
+
+    <app-header></app-header>
+
+    <app-menu></app-menu>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="onecikan">
+
+                    <div class="araclar2">
+                        <div *ngFor="let item of araclar">
+                            <div *ngIf="item.id==motoId">
+
+                                <div class="tanitimyazi col-md-12">{{item.baslik}}
+                                    <hr>
+                                </div>
+
+                                <div class="galeriyazi col-md-12">
+                                    <div class="galeri col-md-8 col-xs-12">
+                                        <div class="row">
+                                            <img src="{{ item.img}}" class="galerii">
+                                            <hr>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="kirmizi col-md-12 col-sm-12">EXTRA AKSESUARLAR ve DONANIMLAR</div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="galeriyazisi col-md-4 col-sm-12">
+                                        <h2>{{item.fiyat}}</h2>
+                                        <div >
+                                            <div class="row">
+                                                <div class=" col-md-5 col-sm-4">{{item.markatext}}</div>
+                                                <div class="col-md-7 col-sm-7">{{ item.marka}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.modeltext}}</div>
+                                                <div class="col-md-7">{{ item.model}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.modelyilitext}}</div>
+                                                <div class="col-md-7">{{ item.modelyili}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.kmtext}}</div>
+                                                <div class="col-md-7">{{ item.km}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5"> {{item.motorhacmitext}}</div>
+                                                <div class="col-md-7">{{ item.motorhacmi}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.motorgucutext}}</div>
+                                                <div class="col-md-7">{{ item.motorgucu}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.yakittext}}</div>
+                                                <div class="col-md-7">{{ item.yakit}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.vitestext}}</div>
+                                                <div class="col-md-7">{{ item.vites}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.govdetext}} </div>
+                                                <div class="col-md-7">{{ item.govdetip}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.disrenktext}} </div>
+                                                <div class="col-md-7">{{ item.disrenk}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.icrenktext}} </div>
+                                                <div class="col-md-7">{{ item.icrenk}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.dosemetext}}</div>
+                                                <div class="col-md-7">{{ item.doseme}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.kaplamatext}}</div>
+                                                <div class="col-md-7">{{ item.kaplama}}</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">{{item.konumtext}}</div>
+                                                <div class="col-md-7">{{ item.konum}}</div>
+                                            </div>
+                                            <br><br>
+                                            <div class="row">
+                                                <div class="kirmizi col-md-12 col-sm-12">İTHALAT DURUMU:{{item.ithalatdurum}}
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="adressShowroom col-md-12">
+                                                    {{item.bolge}}<br>{{item.tel}}<br>{{item.adres}}
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="siyah col-md-12">BİZ SİZİ ARAYALIM</div>
+                                                <div class=" col-md-12">Sizinle bağlantıya geçebilmemiz için lütfen
+                                                    gerekli alanları boş bırakmayın.</div>
+                                                <div class="col-md-12">
+                                                    <form action="/action_page.php">
+                                                        <div class="form-group ">
+
+                                                            <input type="text" class="form-control mb-2 mr-sm-2 "
+                                                                id="usr" placeholder="Adınız Soyadınız" name="username">
+                                                            <input type="text" class="form-control mb-2 mr-sm-2 "
+                                                                id="email2" placeholder="E Posta Adresiniz"
+                                                                name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control mb-2 mr-sm-2"
+                                                                id="usr" placeholder="Telefon Numaranız"
+                                                                name="username">
+
+                                                        </div>
+                                                        <div class="form-group">
+
+                                                            <textarea class="form-control" rows="5"
+                                                                placeholder="Mesajınız" id="comment"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Gönder</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+<app-footer></app-footer>

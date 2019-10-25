@@ -1,0 +1,35 @@
+<div id="basla">
+        <app-header></app-header>
+        <app-menu></app-menu>
+       
+       <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="onecikan">
+                      <div class="araclar">
+                      <div class="oneyazi">ARAZİ ARAÇLARI</div>
+                      
+                      <div class="arabatablo col-md-12" >
+                         
+                          <div (click)="onSelect(item)" *ngFor="let item of araziarac">
+                             
+                            <div class="agenel {{ item.id}} col-md-12">
+                                <div class="aresim "><img src="{{ item.img }}" class="akucuk"></div><div class="aresimyazi">{{item.title}}<br><br>{{item.info}}</div>
+                                
+                            </div>
+                       
+                      </div>
+                      
+                      </div>
+                    
+                      </div>
+                      </div>
+              </div>
+            </div>
+          </div> 
+      
+</div>
+
+
+
+<app-footer></app-footer>
